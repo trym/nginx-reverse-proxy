@@ -16,6 +16,7 @@ RUN chmod 755 /*.sh
 
 # Set reverse proxy domain
 ENV REVERSE_DOMAIN example.com
+ENV REVERSE_PROTO http
 
 # Expose and start
 EXPOSE 80
