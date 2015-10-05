@@ -9,7 +9,7 @@ RUN apt-get update && \
 # Replace configuration
 RUN rm -v /etc/nginx/nginx.conf
 ADD nginx.conf /etc/nginx/
-RUN mkdir /var/log/nginx
+RUN mkdir -p /var/log/nginx
 
 # Add run script
 ADD run.sh /run.sh
